@@ -1,0 +1,17 @@
+/*estilos css*/
+
+body {
+	background-color: grey;
+}
+
+.caja {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: yellow;
+	transition: background-color 1s;
+}
+
+.caja.rojo {
+	background-color: red;
+}
