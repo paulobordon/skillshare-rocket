@@ -1,0 +1,25 @@
+/*estilos css*/
+
+body {
+	background-color: grey;
+}
+
+.caja {
+	visibility: hidden;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background-color: yellow;
+	transition: background-color 1s;
+	
+}
+
+.caja.show {
+	visibility: visible;
+	background-color: yellow;
+	transition: background-color 1s;
+}
+
+.caja.show.color {
+	background-color: red;
+}
