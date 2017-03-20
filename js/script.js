@@ -18,7 +18,14 @@
 	};
 
 	var cambiarPalabra = function() {
-		document.getElementById('cambiarPalabra').innerHTML = "OCULTAR";
+		var claseActual = document.getElementById('box1').className;
+
+		if (claseActual == 'caja show') {
+			document.getElementById('cambiarPalabra').innerHTML = "OCULTAR";	
+		} else {
+			document.getElementById('cambiarPalabra').innerHTML = "MOSTRAR";
+		}
+		
 	}
 
 	var colorChange = function() {
@@ -27,7 +34,7 @@
 		if (nombreActual == 'caja show') {
 			document.getElementById('box1').className = 'caja show color';
 		} else {
-			document.getElementById('box1').className = 'caja'
+			document.getElementById('box1').className = 'caja show'
 		}  
 
 
