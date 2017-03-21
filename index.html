@@ -10,35 +10,51 @@
 
 	<div class="lanzamiento">
 		<div class="stage1">	
-			<div class="titulo">	
-				<h1>JS Lanzamiento de Cohete</h1>
-				<hr>
+			<div class="box1">	
+				<h1>ROCKET LAUNCH</h1>
 			</div>
-				<a href="#" class="boton" onclick="cambiaEstado(2)"> ¡LANZAR!</a>
+				<a href="#" class="boton" onclick="cambiaEstado(2)"></a>
 		</div>
+
 		<div class="stage2">
-			<div class="titulo">	
-				<h1 id="cuentabajo">10</h1>
+		<div class="box1">	
+				<h1>ROCKET LAUNCH</h1>
 			</div>
-				<a href="#" class="boton" onclick="cambiaEstado(1)">ABORTAR</a>
+			<div class="boxcountdown">	
+				<h1 class="countdown" id="cuentabajo">10</h1>
+			</div>
+				<a href="#" class="cancel" onclick="cambiaEstado(1)"></a>
 		</div>
+
 		<div class="stage3">
-			<div class="titulo">	
-				<h1>LANZADO</h1>
+			<div class="box1">	
+				<h1>ROCKET LAUNCH</h1>
+			</div>
+			<div class="lanzado">	
+				<h1 class="good">LANCHED</h1>
 			</div>
 		</div>
+
 		<div class="stage4">	
-			<div class="titulo">
-				<h1>Bien Hecho</h1>
+			<div class="box1">	
+				<h1>ROCKET LAUNCH</h1>
 			</div>
-				<a href="#" class="boton" onclick="cambiaEstado(1)">Volar de nuevo</a>
-		</div>
-		<div class="stage5">	
-			<div class="titulo">
-				<h1>Algo salió MAL</h1>
+			<div class="lanzado">
+				<h1 class="good-2">Well Done!</h1>
 			</div>
-				<a href="#" class="boton" onclick="cambiaEstado(1)">Intentar de nuevo</a>
+			<a href="#" class="doitagain" onclick="cambiaEstado(1)">Volar de nuevo</a>
 		</div>
+
+		<div class="stage5">
+			<div class="box1">	
+				<h1>ROCKET LAUNCH</h1>
+			</div>	
+			<div class="lanzado">
+				<h1 class="wrong">FAIL!!!</h1>
+			</div>
+			<a href="#" class="tryagain" onclick="cambiaEstado(1)">Intentar de nuevo</a>
+		</div>
+
 	</div>
 	
 	<div class="espacio">

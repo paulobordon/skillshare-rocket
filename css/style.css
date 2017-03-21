@@ -22,34 +22,143 @@ body.body-stage5 .stage5{ display: block; }
 .lanzamiento {
 	width: 50%;
 	height: 100%;
-	background-color: #647C93;
+	background-color: #1A1A1A;
+	background-image: url("../img/background.png");
 	position: fixed;
 	left: 0px;
 }
 
-.lanzamiento .titulo {
-	width: 50%;
-	height: auto;
-	left: 50px;
+.lanzamiento .box1 {
 	position: absolute;
 	color: #FFC82E;
 	font-family: 'helvetica', sans-serif;
 	font-weight: bolder;
+	left: 10%;
+	top: 5%;
+	font-size: 200%;
 }
 
 .lanzamiento .boton {
-	position: absolute;
-	left: 50px;
-	top: 200px;
-	font-size: 48px;
-	text-decoration: none;
-	color: white;
-	font-family: 'helvetica', sans-serif;
+	position: absolute;	
+	width: 224px;
+	height: 224px;
+	top:30%;
+	left:10%;
+	background: url("../img/launch-1.png") no-repeat 0 0;
+	box-shadow: 0px 10px 10px #000; /*posicionX posicionY difuminado color*/
 }
 
 .lanzamiento .boton:hover {
-	color: #FF1928;
-	transition: color 0.5s;
+	background: url("../img/launch-2.png") no-repeat 0 0;
+}
+
+.lanzamiento .boxcountdown {
+	position: absolute;	
+	width: 224px;
+	height: 224px;
+	top:30%;
+	left:10%;
+	background-color: #000;
+	border-radius: 20px;
+}
+
+.lanzamiento .boxcountdown .countdown {
+	color: red;
+	font-size: 200px;
+	position: relative;
+	text-align: center;
+	line-height: 0px;
+	bottom: 20px;
+	font-family: 'helvetica', sans-serif;
+}
+
+.lanzamiento .cancel {
+	position: absolute;	
+	width: 224px;
+	height: 224px;
+	top:30%;
+	left:40%;
+	background: url("../img/abort-1.png") no-repeat 0 0;
+	box-shadow: 0px 10px 10px #000; /*posicionX posicionY difuminado color*/
+}
+
+.lanzamiento .cancel:hover {
+	background: url("../img/abort-2.png") no-repeat 0 0;
+}
+
+.lanzamiento .lanzado {
+	position: absolute;	
+	width: 500px;
+	height: 224px;
+	top:30%;
+	left:10%;
+	background-color: #000;
+	border-radius: 20px;
+}
+
+.lanzamiento .lanzado .good {
+	font-size: 95px;
+	color: red;
+	font-family: 'helvetica', sans-serif;
+	text-align: center;
+}
+
+.lanzamiento .lanzado .good-2 {
+	margin-top: 70px;
+	font-size: 80px;
+	color: #00FF00;
+	font-family: 'helvetica', sans-serif;
+	text-align: center;
+}
+
+.lanzamiento .lanzado .wrong{
+	margin-top: 70px;
+	font-size: 80px;
+	color: red;
+	font-family: 'helvetica', sans-serif;
+	text-align: center;
+}
+
+.lanzamiento .doitagain {
+	width: 200px;
+	height: 120px;
+	background-color: #2C75C4;
+	top: 60%;
+    left: 10%;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'helvetica', sans-serif;
+	color: white;
+	border-radius: 10px;
+	padding-top: 82px;
+	font-size: 28px;
+	box-shadow: 0px 7px 10px #0C1933;
+}
+
+.lanzamiento .doitagain:hover {
+	background-color: #1B568C;
+}
+
+.lanzamiento .tryagain {
+	width: 200px;
+	height: 120px;
+	background-color: #E5281A;
+	top: 60%;
+    left: 10%;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'helvetica', sans-serif;
+	color: white;
+	border-radius: 10px;
+	padding-top: 72px;
+	font-size: 28px;
+	box-shadow: 0px 7px 10px #330805;
+}
+
+.lanzamiento .tryagain:hover {
+	background-color: #AD1C12;
 }
 
 .espacio {
