@@ -55,19 +55,28 @@ body.body-stage5 .stage5{ display: block; }
 .espacio {
 	width: 50%;
 	height: 100%;
-	background-color: #B4D9FC;
+	background-color: #D0EBF4;
 	position: fixed;
 	right: 0px; 
+}
+
+.espacio .cielo {
+	width: 100%;
+	height: 768px;
+	position: absolute;
+	top: 0px;
+	background: url("../img/cielo-degradado.png") repeat-x;
 }
 
 .espacio .cohete {
 	width: 40px;
 	height: 150px;
-	background-color: #6E6E6E;
+	background-color: black;
 	bottom: 20px;
 	position: absolute;
 	left: 50%;
 	transition: bottom 10000ms;
+	z-index: 100;
 }
 
 body.body-stage1 .cohete,
@@ -80,12 +89,30 @@ body.body-stage4 .cohete {
 	bottom: 1000px;
 }
 
+.espacio .montanhas {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	height: 158px;
+	background: url("../img/montanhas.png") repeat-x;
+	z-index: 0;
+}
+
+.espacio .arbustos {
+	position: absolute;
+	width: 100%;
+	height: 70px;
+	bottom: 20px;
+	z-index: 1;
+	background: url("../img/arbustos.png") repeat-x;
+}
+
 .espacio .suelo {
 	position: absolute;
 	width: 100%;
 	height: 20px;
 	bottom: 0px;
-	background-color: #088A08;
+	background:url("../img/suelo.png") repeat-x;
 }
 
 
