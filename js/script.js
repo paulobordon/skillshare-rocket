@@ -22,14 +22,14 @@ var cambiaEstado = function(estado) {
 			cuentaRegresiva = cuentaRegresiva -1;
 			document.getElementById('cuentabajo').innerHTML = cuentaRegresiva;
 			
-			if (cuentaRegresiva == 6) {
+			if (cuentaRegresiva > 4 && cuentaRegresiva <= 7) {
 				//I'm nervous
 				document.getElementById('nervous').className = 'nervioso mostrar';
 			} else {
 				document.getElementById('nervous').className = 'nervioso';
 			};
 
-			if (cuentaRegresiva == 2) {
+			if (cuentaRegresiva > 0 && cuentaRegresiva <= 4) {
 				//This is it!
 				document.getElementById('casi').className = 'almost mostrar';
 			} else {
@@ -40,7 +40,7 @@ var cambiaEstado = function(estado) {
 				cambiaEstado(3);
 			};
 
-		}, 500);
+		}, 1000);
 
 //En esta funcion digo que si el ESTADO del body es igual a 2, que inicie el timer. Donde con la funcion setInterval() determino otra función donde digo que agarre el elemento con id 'cuentabajo' y con el innerHTML, digo que agarre la variable cuentaRegresiva. Luego, digo que el valor de cuentaRegresiva sea igual al valor del mismo menos 1. Al final, digo que esta funcion de cuentaRegresiva sea realizada cada 1000 ms, o sea, cada segundo
 	} else if (estado == 3){
