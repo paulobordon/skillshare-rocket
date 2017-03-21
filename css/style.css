@@ -69,14 +69,15 @@ body.body-stage5 .stage5{ display: block; }
 }
 
 .espacio .cohete {
-	width: 40px;
-	height: 150px;
-	background-color: black;
+	width: 198px;
+	height: 359px;
+	background: url("../img/cohete.png") no-repeat;
 	bottom: 20px;
 	position: absolute;
 	left: 50%;
 	transition: bottom 10000ms;
 	z-index: 100;
+	margin-left: -99px;
 }
 
 body.body-stage1 .cohete,
@@ -86,7 +87,9 @@ body.body-stage5 .cohete {
 
 body.body-stage3 .cohete,
 body.body-stage4 .cohete {
+	background: url("../img/cohete-estado3.gif") no-repeat;
 	bottom: 1000px;
+	height: 388px;
 }
 
 .espacio .montanhas {
