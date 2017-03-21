@@ -15,15 +15,33 @@ var cambiaEstado = function(estado) {
 //en esta función, lo que digo es que los que tenga evento con la variable/funcion "cambiaEstado", donde dentro del parentesis se va a encontrar los valores de cada estado.
 //Para cambiar la clase del BODY, que son 'estados', digo que agarre el Body con la clase 'body-stage' más el estado.
 //Al hacer click en el evento, como los parametros están definidos en el HTML, cambia el body de estado
+	
+	//CUENTA REGRESIVA
 	if (estado == 2) {
 		timer = setInterval(function(){
 			cuentaRegresiva = cuentaRegresiva -1;
 			document.getElementById('cuentabajo').innerHTML = cuentaRegresiva;
+			
+			if (cuentaRegresiva == 6) {
+				//I'm nervous
+				document.getElementById('nervous').className = 'nervioso mostrar';
+			} else {
+				document.getElementById('nervous').className = 'nervioso';
+			};
+
+			if (cuentaRegresiva == 2) {
+				//This is it!
+				document.getElementById('casi').className = 'almost mostrar';
+			} else {
+				document.getElementById('casi').className = 'almost';
+			};
+
 			if (cuentaRegresiva <= -1){
 				cambiaEstado(3);
-			}
+			};
 
-		}, 1000);
+		}, 500);
+
 //En esta funcion digo que si el ESTADO del body es igual a 2, que inicie el timer. Donde con la funcion setInterval() determino otra función donde digo que agarre el elemento con id 'cuentabajo' y con el innerHTML, digo que agarre la variable cuentaRegresiva. Luego, digo que el valor de cuentaRegresiva sea igual al valor del mismo menos 1. Al final, digo que esta funcion de cuentaRegresiva sea realizada cada 1000 ms, o sea, cada segundo
 	} else if (estado == 3){
 

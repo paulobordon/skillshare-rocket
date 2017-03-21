@@ -85,11 +85,24 @@ body.body-stage5 .cohete {
 	transition: none;
 }
 
+body.body-stage2 .cohete {
+	background: url("../img/ignition.gif") no-repeat 0 0;
+	height: 379px;
+	bottom: 0px;
+	transition: none;
+}
+
 body.body-stage3 .cohete,
 body.body-stage4 .cohete {
 	background: url("../img/cohete-estado3.gif") no-repeat;
 	bottom: 1000px;
 	height: 388px;
+}
+body.body-stage5 .cohete {
+	background: url("../img/explosion.gif") no-repeat;
+	width: 263px;
+	height: 192px;
+	bottom: auto;
 }
 
 .espacio .montanhas {
@@ -118,4 +131,32 @@ body.body-stage4 .cohete {
 	background:url("../img/suelo.png") repeat-x;
 }
 
+.nervioso {
+	background: url("../img/nervioso.png") no-repeat 0 0;
+	width: 200px;
+	height: 160px;
+	position: absolute;
+	bottom: 280px;
+	left: 50%;
+	margin-left: -250px;
+	display: none;
+}
 
+.nervioso.mostrar {
+	display: block;
+}
+
+.almost {
+	background: url("../img/thisisit.png") no-repeat 0 0;
+	width: 200px;
+	height: 160px;
+	position: absolute;
+	bottom: 280px;
+	left: 50%;
+	margin-left: 50px;
+	display: none;
+}
+
+.almost.mostrar {
+	display: block;
+}
