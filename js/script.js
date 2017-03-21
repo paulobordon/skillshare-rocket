@@ -48,7 +48,7 @@ var cambiaEstado = function(estado) {
 		var exito = setTimeout (function() {
 			var randomNumber = Math.round(Math.random()*10);
 			console.log('randomNumber: ',randomNumber);
-			if (randomNumber > 4) {
+			if (randomNumber > 3) {
 				//exito
 				cambiaEstado(4)
 			} else {
