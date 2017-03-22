@@ -204,7 +204,7 @@ body.body-stage2 .cohete {
 body.body-stage3 .cohete,
 body.body-stage4 .cohete {
 	background: url("../img/cohete-estado3.gif") no-repeat;
-	bottom: 1000px;
+	bottom: 3000px;
 	height: 388px;
 }
 body.body-stage5 .cohete {
